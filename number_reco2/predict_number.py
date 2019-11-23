@@ -36,7 +36,7 @@ y = data[0:1000, 0]
 
 
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .01)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = .1)
 #print(y_train)
 #exit()
 #training data
