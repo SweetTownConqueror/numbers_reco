@@ -68,13 +68,13 @@ Cet algorithme des KNN est donc relativement efficace pour ce qui est de la reco
 ------------------------------------------------
 TESTS & AMELIORATIONS
 ------------------------------------------------
-predict_number2.py
+predict_number_my_3nn_class.py
 J'ai essayé de créer mon propore KNN qui prend en compte les 3 plus proches voisins, et cela fonctionne avec une certitude de 85%
 J'obtiens le même résultat qu'avec la librairie KNN de sklearn sauf que ma version mets plus de temps à s'exécuter.
 On pourrait théoriquement avoir une meilleure prédiction avec 10 fois plus de données mais ma classe 3NN met alors trop de temps à s'exécuter.
 En revanche la librairie KNN de sklearn fonctionne avec 10 fois plus de données et obtiens une précision allant jusqu'à 95%!!
 Si vous voulez tester:
-python3 predict_number3.py
+python3 predict_numberKNNLib.py
 et comparez en décommentant ces 2 lignes:
 X = data[0:10000:, 1:]
 y = data[0:10000, 0]
@@ -82,4 +82,4 @@ y = data[0:10000, 0]
 J'ai égalemenent fait des tests avec la librairie svc de la librairie svm.
 Avec certains paramètres les prédictions sont très mauvaises (exemple: 10% avec rbf)
 trop longues avec le kernel sigmoid, en revanche avec le kernel linear et polynomial, on obtiens somme toute de bonnes pédictions: 92% environ.
-Pour tester: python3 predict_number4.py
+Pour tester: python3 predict_number_SVC.py
